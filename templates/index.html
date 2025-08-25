@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+<div style="text-align:center">
+    <h1>Сократите свою ссылку</h1>
+    <h2>{{ login }}</h2>
+    <h3>{{ status }}</h3>
+    <form action="/" method="POST">
+        <div>
+            <input type="text"
+                   name="original_url"
+                   placeholder="Введите URL"/>
+            <div>
+                <button type="submit">
+                    Сократить
+                </button>
+            </div>
+        </div>
+    </form>
+    {% if short_url %}
+    <div>
+        <p>
+            Сокращенная ссылка:
+            <a href="{{ request.host_url }}{{ short_url }}">{{ request.host_url }}{{ short_url }}</a>
+        </p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

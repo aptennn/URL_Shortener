@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="header-title">Сокращатель ссылок - Быстрые ссылки для вас!</title>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-brand"> URL_Shortener</a>
+
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/history">История</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Войти в аккаунт</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Регистрация</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Выйти из аккаунта</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<main>
+    {% block content %}
+
+    <h1>Добро пожаловать!</h1>
+
+    {% endblock %}
+</main>
+
+</body>
+</html>

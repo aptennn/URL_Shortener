@@ -2,4 +2,7 @@
 ## URL_Shortener - сайт для получения сокращенных ссылок на Flask
 Сайт позволяет сокращать длинные ссылки, есть авторизация и регистрация, история сокращенных ссылок
 В проекте используется Python, база данных Sqlite, Flask, Flask-login
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/aptennn/URL_Shortener/blob/main/images/photo_2025-08-25_21-13-34.jpg))
+После запуска app.py перейдите на http://127.0.0.1:8080 
+
+<img width="2516" height="510" alt="изображение" src="https://github.com/user-attachments/assets/ac944683-e316-424a-9bfa-be0bf044955f" />
+![photo_2025-08-25_21-13-34](https://github.com/user-attachments/assets/4c07de80-fbd6-4d2b-9a08-ced429f61327)
